@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/dimpledimpu50-cmyk/jenkins-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean package'
